@@ -284,7 +284,7 @@ Animator:
   m_GameObject: {fileID: 22462832}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dc883caf9d322bc4582794bd8368ec27, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4f0b0fcc3b68933429d223569fe8c585, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 40870163}
   - component: {fileID: 40870162}
   - component: {fileID: 40870164}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: tijolo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
