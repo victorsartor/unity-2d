@@ -39,20 +39,20 @@ public class player : MonoBehaviour
 
         if(Input.GetAxis("Horizontal") > 0f)
         {
-            anim.SetBool("walk", true);
+            anim.SetBool("Walk", true);
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
         }
 
         if (Input.GetAxis("Horizontal") < 0f)
         {
-            anim.SetBool("walk", true);
-            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            anim.SetBool("Walk", true);
+            transform.eulerAngles = new Vector3(0f, 180f, 0f); 
 
         }
 
         if (Input.GetAxis("Horizontal") == 0f)
         {
-            anim.SetBool("walk", false);
+            anim.SetBool("Walk", false);
         }
     }
 
@@ -64,6 +64,8 @@ public class player : MonoBehaviour
             {
                 rig.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
                 doubleJump = true;
+                anim.SetBool("Jump", true);
+
             }
             else
             {
@@ -82,6 +84,7 @@ public class player : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             isJumping = false;
+            anim.SetBool("Jump", false);
         }
     }
     void OnCollisionExit2D(Collision2D collision)
