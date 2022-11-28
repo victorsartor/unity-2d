@@ -270,7 +270,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 6
-  jumpForce: 9.65
+  jumpForce: 10
+  isJumping: 0
+  doubleJump: 0
 --- !u!1 &40870160
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +285,7 @@ GameObject:
   - component: {fileID: 40870163}
   - component: {fileID: 40870162}
   - component: {fileID: 40870164}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tijolo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10523,7 +10525,7 @@ GameObject:
   - component: {fileID: 1853120277}
   - component: {fileID: 1853120276}
   - component: {fileID: 1853120278}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "ch\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
