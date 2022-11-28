@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 40870163}
   - component: {fileID: 40870162}
   - component: {fileID: 40870164}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tijolo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
