@@ -341,10 +341,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 22462838}
   attackPoint: {fileID: 1622498}
-  attackRange: 0.3
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
+  attackRange: 0.3
+  attackDamage: 40
 --- !u!1 &40870160
 GameObject:
   m_ObjectHideFlags: 0
@@ -10392,8 +10393,9 @@ GameObject:
   - component: {fileID: 767421767}
   - component: {fileID: 767421769}
   - component: {fileID: 767421770}
-  m_Layer: 0
-  m_Name: Enemy
+  - component: {fileID: 767421771}
+  m_Layer: 9
+  m_Name: Olho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10407,7 +10409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767421765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0982, y: 1.0481, z: -0.042528708}
+  m_LocalPosition: {x: -2.67, y: 2.3, z: -0.042528708}
   m_LocalScale: {x: 0.99116, y: 0.99116, z: 0.99116}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10515,6 +10517,19 @@ CircleCollider2D:
   m_Offset: {x: 0.007775843, y: 0}
   serializedVersion: 2
   m_Radius: 0.7566059
+--- !u!114 &767421771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767421765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a667de5899fd7c645a604645f8d93d1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxVida: 100
 --- !u!1 &1104115311
 GameObject:
   m_ObjectHideFlags: 3
@@ -10819,9 +10834,8 @@ GameObject:
   - component: {fileID: 1447139248}
   - component: {fileID: 1447139247}
   - component: {fileID: 1447139250}
-  - component: {fileID: 1447139251}
-  m_Layer: 0
-  m_Name: olho
+  m_Layer: 9
+  m_Name: olinho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10914,18 +10928,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1447139251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447139246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22089e2b528014a42993bb55ebe11ed4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1853120274
 GameObject:
   m_ObjectHideFlags: 0

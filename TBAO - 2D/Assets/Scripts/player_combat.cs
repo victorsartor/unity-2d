@@ -5,10 +5,11 @@ using UnityEngine;
 public class player_combat : MonoBehaviour
 {
     public Animator animator;
-
     public Transform attackPoint;
-    public float attackRange = 0.5f;
     public LayerMask enemyLayers;
+
+    public float attackRange = 0.5f;
+    public int attackDamage = 40;
 
     void Update()
     {
@@ -28,7 +29,7 @@ public class player_combat : MonoBehaviour
         //dar dano
         foreach(Collider2D enemy in hitEnemis)
         {
-            Debug.Log("We hit" + enemy.name);
+            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
     }
 
