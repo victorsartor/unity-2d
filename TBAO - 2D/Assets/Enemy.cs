@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
         currentVida -= damage;
 
         //play hurt animation
-        animator.SetTrigger("hurt");
+        animator.SetTrigger("Hurt");
 
         if(currentVida <= 0)
         {
@@ -32,13 +32,13 @@ public class Enemy : MonoBehaviour
         Debug.Log("Enemy MORREU");
 
         //die animation
-        animator.SetBool("die", true);
+        animator.SetBool("Die", true);
 
         //disable the enemy
-        GetComponent<Collider2D>().enabled = false;
+        GetComponent<CircleCollider2D>().enabled = false;
         this.enabled = false;
 
-
+         
     }
 
 }
