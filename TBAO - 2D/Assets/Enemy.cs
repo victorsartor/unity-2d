@@ -31,21 +31,17 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("Enemy MORREU");
 
-
-
         //die animation
         animator.SetBool("Die", true);
 
-
-
         //disable the enemy
-        //GetComponent<BoxCollider2D>().enabled = false;
+        //GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
 
 
 
-        //GetComponent<EnemyAI>().enabled = false;
         //GetComponentInChildren<SpriteRenderer>().enabled = false;
+        //GetComponent<EnemyAI>().enabled = false;
 
     }
 
