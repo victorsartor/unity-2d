@@ -35,15 +35,13 @@ public class Enemy : MonoBehaviour
         animator.SetBool("Die", true);
 
         //disable the enemy
-        //GetComponent<Collider2D>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
-
-
-
-        //GetComponentInChildren<SpriteRenderer>().enabled = false;
-        //GetComponent<EnemyAI>().enabled = false;
 
     }
 
 }
 
+
+        //GetComponentInChildren<SpriteRenderer>().enabled = false;
+        //GetComponent<EnemyAI>().enabled = false;
