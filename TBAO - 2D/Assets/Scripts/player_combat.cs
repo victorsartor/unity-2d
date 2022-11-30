@@ -39,10 +39,6 @@ public class player_combat : MonoBehaviour
         {
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
-        foreach (CircleCollider2D enemy in hitEnemis)
-        {
-            enemy.GetComponent<Enemy_Olho>().TakeDamage(attackDamage);
-        }
     }
 
 
