@@ -210,7 +210,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06544599, y: 0.015096836}
+  m_Offset: {x: 0.0619964, y: 0.01656209}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -221,7 +221,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4710446, y: 0.5103164}
+  m_Size: {x: 0.48049515, y: 0.5168226}
   m_EdgeRadius: 0
 --- !u!212 &22462835
 SpriteRenderer:
@@ -283,7 +283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22462832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.415, y: -1.168, z: 0}
+  m_LocalPosition: {x: -18.416, y: -1.1872, z: 0}
   m_LocalScale: {x: 2.7655447, y: 3.4223614, z: 2.7655447}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10340,7 +10340,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.448002, y: 0.96799994, z: -10}
+  m_LocalPosition: {x: -18.449001, y: 0.94879997, z: -10}
   m_LocalScale: {x: 0.93859875, y: 0.93859875, z: 0.93859875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10410,7 +10410,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767421765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.06, y: 0.17, z: -0.042528708}
+  m_LocalPosition: {x: -9.84, y: 0.54, z: -0.042528708}
   m_LocalScale: {x: 0.99116, y: 0.99116, z: 0.99116}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10431,8 +10431,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 5
-  radius: 1.43
-  height: 2
+  radius: 1.23
+  height: 0.86
   canMove: 1
   maxSpeed: 6.5
   gravity: {x: 0, y: 0, z: 0}
@@ -10517,7 +10517,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.36
+  m_Radius: 0.94
 --- !u!114 &767421771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10817,7 +10817,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361340422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.448002, y: 0.96799994, z: -10}
+  m_LocalPosition: {x: -18.449001, y: 0.94879997, z: -10}
   m_LocalScale: {x: 0.86742, y: 0.86742, z: 0.86742}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10836,6 +10836,7 @@ GameObject:
   - component: {fileID: 1447139248}
   - component: {fileID: 1447139247}
   - component: {fileID: 1447139250}
+  - component: {fileID: 1447139251}
   m_Layer: 9
   m_Name: olinho
   m_TagString: Untagged
@@ -10930,6 +10931,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1447139251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447139246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac43a70d896996440a8ee3cfd1b97a98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiPath: {fileID: 767421767}
 --- !u!1 &1853120274
 GameObject:
   m_ObjectHideFlags: 0
