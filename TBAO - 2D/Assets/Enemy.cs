@@ -38,7 +38,9 @@ public class Enemy : MonoBehaviour
         GetComponent<CircleCollider2D>().enabled = false;
         this.enabled = false;
 
-         
+        //GetComponentInChildren<SpriteRenderer>().enabled = false;
+
+
     }
 
 }
