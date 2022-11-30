@@ -11,6 +11,8 @@ public class EnemyAI : MonoBehaviour
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
 
+    public Transform EnemyGFX;
+
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
@@ -24,7 +26,14 @@ public class EnemyAI : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
 
-        seeker.StartPath(rb.position, target.position, OnPathComplete);
+        InvokeRepeating("UpdatePath", 0f, .5f);
+    }
+
+    void UpdatePath()
+    {
+        if (seeker.IsDone())
+            seeker.StartPath(rb.position, target.position, OnPathComplete);
+            
     }
 
     void OnPathComplete(Path p)
@@ -61,6 +70,15 @@ public class EnemyAI : MonoBehaviour
         if (distance < nextWaypointDistance)
         {
             currentWaypoint++;
+        }
+
+        if (force.x >= 0.01f)
+        {
+            EnemyGFX.localScale = new Vector3(-6.384007f, 6.384007f, 6.384007f);
+        }
+        else if (force.x <= -0.01f)
+        {
+            EnemyGFX.localScale = new Vector3(6.384007f, 6.384007f, 6.384007f);
         }
     }
 }

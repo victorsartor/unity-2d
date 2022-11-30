@@ -13372,7 +13372,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -13393,8 +13393,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 22462836}
-  speed: 200
+  speed: 400
   nextWaypointDistance: 3
+  EnemyGFX: {fileID: 1589005143}
 --- !u!114 &1980547713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13461,7 +13462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980547710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.24, y: 3.41, z: -0.042528708}
+  m_LocalPosition: {x: -12.39, y: 4.4, z: -0.042528708}
   m_LocalScale: {x: 0.99116, y: 0.99116, z: 0.99116}
   m_ConstrainProportionsScale: 0
   m_Children:
