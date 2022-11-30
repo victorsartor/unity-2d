@@ -37,8 +37,12 @@ public class player_combat : MonoBehaviour
         //dar dano
         foreach(Collider2D enemy in hitEnemis)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+            if (enemy.GetComponent<Enemy>() != null)
+            { enemy.GetComponent<Enemy>().TakeDamage(attackDamage); }
+            else if (enemy.GetComponent<Enemy_Olho>() != null)
+            { enemy.GetComponent<Enemy_Olho>().TakeDamage(attackDamage); }
         }
+
     }
 
 
