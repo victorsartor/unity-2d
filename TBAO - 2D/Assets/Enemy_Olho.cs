@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy_Olho : MonoBehaviour
 {
     public Animator animator;
 
@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
         animator.SetBool("Die", true);
 
         //disable the enemy
-        GetComponent<Collider2D>().enabled = false;
+        GetComponent<CircleCollider2D>().enabled = false;
         this.enabled = false;
     }
 }

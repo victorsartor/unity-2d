@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1622498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,8 +147,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622497}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3023, y: 0.076, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.25, y: 0.076, z: 0}
+  m_LocalScale: {x: 0.725, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 22462836}
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 22462837}
   - component: {fileID: 22462838}
   - component: {fileID: 22462839}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22462832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.83, y: -1.1872, z: 0}
+  m_LocalPosition: {x: -13.98, y: -1.1872, z: 0}
   m_LocalScale: {x: 2.7655447, y: 3.4223614, z: 2.7655447}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -343,8 +343,8 @@ MonoBehaviour:
   attackPoint: {fileID: 1622498}
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 512
-  attackRange: 0.32
+    m_Bits: 768
+  attackRange: 0.44
   attackDamage: 40
   attackRate: 2
 --- !u!1 &40870160
@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 40870163}
   - component: {fileID: 40870162}
   - component: {fileID: 40870164}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: tijolo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2834,7 +2834,7 @@ GameObject:
   - component: {fileID: 266073637}
   - component: {fileID: 266073641}
   - component: {fileID: 266073642}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: cogu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2887,7 +2887,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!212 &266073639
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2948,7 +2948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266073636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.67425, y: -0.4598, z: 0}
+  m_LocalPosition: {x: -2.14, y: -0.458, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10509,7 +10509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.797, y: 0.94879997, z: -10}
+  m_LocalPosition: {x: -14.013, y: 0.94879997, z: -10}
   m_LocalScale: {x: 0.93859875, y: 0.93859875, z: 0.93859875}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10986,7 +10986,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361340422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.797, y: 0.94879997, z: -10}
+  m_LocalPosition: {x: -14.013, y: 0.94879997, z: -10}
   m_LocalScale: {x: 0.86742, y: 0.86742, z: 0.86742}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11124,7 +11124,8 @@ GameObject:
   - component: {fileID: 1589005143}
   - component: {fileID: 1589005142}
   - component: {fileID: 1589005141}
-  m_Layer: 9
+  - component: {fileID: 1589005144}
+  m_Layer: 8
   m_Name: olinho
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11211,13 +11212,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589005140}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: -0.22, z: -0.000000040978}
-  m_LocalScale: {x: 6.3840075, y: 6.3840075, z: 6.3840075}
+  m_LocalPosition: {x: 0.24, y: -0.37, z: -0.000000040978}
+  m_LocalScale: {x: 6.384007, y: 6.384007, z: 6.384007}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1980547716}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1589005144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589005140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca379805dfde71b4ab3ffd0de11268fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1589005141}
+  maxVida: 100
 --- !u!1 &1853120274
 GameObject:
   m_ObjectHideFlags: 0
@@ -11230,7 +11245,7 @@ GameObject:
   - component: {fileID: 1853120277}
   - component: {fileID: 1853120276}
   - component: {fileID: 1853120278}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "ch\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13517,12 +13532,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1980547716}
   - component: {fileID: 1980547715}
-  - component: {fileID: 1980547714}
-  - component: {fileID: 1980547713}
   - component: {fileID: 1980547712}
+  - component: {fileID: 1980547714}
   - component: {fileID: 1980547711}
   - component: {fileID: 1980547718}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: Olho (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13563,23 +13577,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 22462836}
-  speed: 800
+  speed: 400
   nextWaypointDistance: 3
   EnemyGFX: {fileID: 1589005143}
---- !u!114 &1980547713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1980547710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a667de5899fd7c645a604645f8d93d1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1589005141}
-  maxVida: 100
 --- !u!58 &1980547714
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -13632,8 +13632,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980547710}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.87, y: 4.4, z: -0.042528708}
-  m_LocalScale: {x: 0.99116, y: 0.99116, z: 0.99116}
+  m_LocalPosition: {x: -3.93, y: 2.58, z: -0.042529}
+  m_LocalScale: {x: 1.0695914, y: 1.0695914, z: 1.0695914}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1589005143}
