@@ -15,7 +15,7 @@ public class EnemyAI : MonoBehaviour
 
     Path path;
     int currentWaypoint = 0;
-    private bool reachedEndOfPath = false;
+    bool reachedEndOfPath = false;
 
     Seeker seeker;
     Rigidbody2D rb;
