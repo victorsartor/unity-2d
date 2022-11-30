@@ -9,7 +9,7 @@ public class player_combat : MonoBehaviour
     public LayerMask enemyLayers;
 
     public float attackRange = 0.10f;
-    public int attackDamage = 50;
+    public int attackDamage = 40;
 
     public float attackRate = 2f;
     float nextAttackTime = 0f;
@@ -39,6 +39,7 @@ public class player_combat : MonoBehaviour
         {
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
+
     }
 
 

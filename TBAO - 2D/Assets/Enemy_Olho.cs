@@ -34,7 +34,7 @@ public class Enemy_Olho : MonoBehaviour
         animator.SetBool("Die", true);
 
         //disable the enemy
-        GetComponent<CircleCollider2D>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
     }
 }
