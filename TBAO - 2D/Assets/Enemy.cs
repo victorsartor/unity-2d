@@ -36,10 +36,10 @@ public class Enemy : MonoBehaviour
 
         //disable the enemy
         GetComponent<BoxCollider2D>().enabled = false;
-       // GetComponent<EnemyAI>().enabled = false;
+        //GetComponent<EnemyAI>().enabled = false;
         this.enabled = false;
 
-        //GetComponentInChildren<SpriteRenderer>().enabled = false;
+        GetComponentInChildren<SpriteRenderer>().enabled = false;
 
     }
 
