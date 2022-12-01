@@ -35,10 +35,15 @@ public class Enemy : MonoBehaviour
 
         //disable the enemy
         GetComponent<Collider2D>().enabled = false;
+        GetComponent<EnemyAI>().enabled = false;
+
+
         this.enabled = false;
-        Destroy(this);
 
     }
+    public void Stop()
+    {
+        Destroy(this);
+    }
 
-   
 }
