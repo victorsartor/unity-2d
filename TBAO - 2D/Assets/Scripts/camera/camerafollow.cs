@@ -5,7 +5,7 @@ using UnityEngine;
 public class camerafollow : MonoBehaviour
 {
     public Transform target;
-    public float smoothSpeed = 1f;
+    public float smoothSpeed = 0.9f;
 
     void Start()
     {
