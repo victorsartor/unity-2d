@@ -18,7 +18,7 @@ public class player_combat : MonoBehaviour
     {
         if(Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.X))
+            if (Input.GetButtonDown("Fire3Controle"))
             {
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
@@ -42,6 +42,7 @@ public class player_combat : MonoBehaviour
             else if (enemy.GetComponent<Enemy_Olho>() != null)
             { enemy.GetComponent<Enemy_Olho>().TakeDamage(attackDamage); }
         }
+
 
     }
 
