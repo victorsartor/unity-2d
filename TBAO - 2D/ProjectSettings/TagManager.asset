@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - spike
+  - player
   layers:
   - Default
   - TransparentFX
